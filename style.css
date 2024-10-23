@@ -16,7 +16,7 @@ body {
         "calculate         history"
         "memory-btns       history"
         "keys              history";
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(211, 211, 211);
 }
 
 /* top-nav */
@@ -70,19 +70,23 @@ div.top-nav div.right-section div {
 .standard-section div {
     /* border: 1px solid; */
 }
+.standard-text {
+    font-size: 20px;
+    font-weight: 600;
+}
 
 /* calculation-section */
 .calculation-section {
     grid-area: calculate;
     /* border: 1px solid; */
-    font-size: 28px;
+    font-size: 56px;
     font-weight: 600;
     position: relative;
 }
 .calculation-section .number {
     position: absolute;
     bottom: 0;
-    right: 3px;
+    right: 10px;
 }
 
 /* m-btns-section */
@@ -95,10 +99,11 @@ div.top-nav div.right-section div {
     color: gray;
 }
 .m-btns-section div {
-    /* border: 1px solid; */
-    width: 45px;
+    border: 1px solid;
+    width: 110px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* key-section  */
@@ -106,12 +111,26 @@ div.top-nav div.right-section div {
     grid-area: keys;
     /* display: none; */
     display: grid;
+    gap: 2px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
 }
 .key-section div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(228, 228, 228);
+    border-radius: 2px;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+.key-section div:hover {
+    background-color: rgb(210, 210, 210) !important;
+}
+.key-section div:active {
+    background-color: rgb(194, 194, 194) !important;
+}
+.key-section div.number-btn {
+    background-color: rgb(244, 244, 244);
 }
