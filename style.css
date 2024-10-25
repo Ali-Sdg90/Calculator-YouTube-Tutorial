@@ -32,7 +32,7 @@ div.top-nav .left-section {
     padding: 4px;
 }
 div.top-nav div.right-section div {
-    width: 40px;
+    width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,12 +75,38 @@ div.top-nav div.right-section div:active {
     grid-area: standard;
     display: flex;
     align-items: center;
-    gap: 16px;
-    padding-left: 4px;
+    gap: 12px;
+    padding-left: 6px;
 }
 .standard-text {
     font-size: 20px;
     font-weight: 600;
+}
+.standard-left-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("./images/menu-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    transition: background-color 0.15s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.standard-left-icon:hover {
+    background-color: rgb(201, 201, 201) !important;
+}
+.standard-left-icon:active {
+    background-color: rgb(194, 194, 194) !important;
+}
+
+.standard-right-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url("./images/standard-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 36px;
 }
 
 /* calculation-section */
@@ -104,8 +130,16 @@ div.top-nav div.right-section div:active {
     font-weight: 600;
 }
 .m-btns-section .disable {
-    color: gray;
+    color: rgb(167, 167, 167);
+    cursor: default;
 }
+.m-btns-section .disable:hover {
+    background-color: transparent !important;
+}
+.m-btns-section .disable:active {
+    background-color: transparent !important;
+}
+
 .m-btns-section div {
     width: 110px;
     display: flex;
@@ -116,10 +150,10 @@ div.top-nav div.right-section div:active {
     cursor: pointer;
 }
 .m-btns-section div:hover {
-    background-color: rgb(201, 201, 201) !important;
+    background-color: rgb(201, 201, 201);
 }
 .m-btns-section div:active {
-    background-color: rgb(194, 194, 194) !important;
+    background-color: rgb(194, 194, 194);
 }
 
 /* key-section  */
@@ -138,6 +172,7 @@ div.top-nav div.right-section div:active {
     border-radius: 2px;
     transition: background-color 0.15s;
     cursor: pointer;
+    font-size: 20px;
 }
 .key-section div:hover {
     background-color: rgb(201, 201, 201) !important;
@@ -147,4 +182,11 @@ div.top-nav div.right-section div:active {
 }
 .key-section div.number-btn {
     background-color: rgb(244, 244, 244);
+    font-size: 22px;
+    font-weight: 600;
+}
+.delete-btn {
+    background-image: url("./images/delete-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
