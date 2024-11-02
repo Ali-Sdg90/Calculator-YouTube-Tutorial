@@ -82,22 +82,31 @@ div.top-nav div.right-section div:active {
     font-size: 20px;
     font-weight: 600;
 }
-.standard-left-icon {
+.standard-left-btn {
     width: 40px;
     height: 40px;
-    background-image: url("./images/menu-icon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px;
     transition: background-color 0.15s;
     border-radius: 4px;
     cursor: pointer;
 }
-.standard-left-icon:hover {
+.standard-left-btn:hover {
     background-color: rgb(201, 201, 201) !important;
 }
-.standard-left-icon:active {
+.standard-left-btn:active {
     background-color: rgb(194, 194, 194) !important;
+}
+
+.standard-left-icon {
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/menu-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    transition: transform 0.15s;
+}
+.standard-left-icon:active {
+    transform: scaleX(0.55);
 }
 
 .standard-right-icon {
